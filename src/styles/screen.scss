@@ -75,14 +75,24 @@ body {
   // }
 }
 
-.Main, h1 {
-  border-bottom: 1px solid #333;
+.bodyh1 {
+  // border-bottom: 1px solid #333;
 }
-.menuItems, h1 {
+.menuItems, h1, .contactBox {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.menuLinks {
+  display: flex;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    margin: 0px;
+  }
 }
 
 .spanTitle {
@@ -94,4 +104,39 @@ body {
   margin: 20px;
   display: flex;
   flex-direction: column;
+}
+
+
+.hoursBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+}
+.aboutGrid {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 180px 180px 180px;
+  grid-template-rows: auto;
+
+  .gridItem {
+    align-self: stretch;
+    height: 170px;
+    width: 180px;
+    margin: 10px;
+  }
 }

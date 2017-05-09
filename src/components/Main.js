@@ -6,13 +6,13 @@ class Main extends Component {
     return <div className='Main'>
       <div className='navBar'>
         <div className='links'>
-          <a href='#'> <Link to='/'> Home </Link> </a>
-          <a href='#'> <Link to='/menu'> Menu </Link> </a>
+          <Link to='/'> Home </Link>
+          <Link to='/menu'> Menu </Link>
         </div>
         <span className='logo'> Soma </span>
         <div className='links'>
-          <a href='#'> <Link to='/about'> About </Link> </a>
-          <a href='#'> <Link to='/contact'> Contact </Link> </a>
+          <Link to='/about'> About </Link>
+          <Link to='/contact'> Contact </Link>
         </div>
       </div>
     </div>
