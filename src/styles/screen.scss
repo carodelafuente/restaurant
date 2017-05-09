@@ -1,13 +1,97 @@
 @import 'utility';
 
-$base-text-size: 16px;
-$base-font-family: sans-serif;
-
 html {
   @include full-height;
 }
 
 body {
   margin: 0;
-  font: $base-text-size / 1 $base-font-family;
+  font-family: Gotham Thin;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  background-color: #333;
+  font-size: 11px;
+
+  .logo {
+    font-family: Bebas;
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+
+  .links {
+    justify-content: space-around;
+
+    a {
+      text-decoration: none;
+      margin: 20px;
+      color: white;
+
+      &:visited {
+        color: white;
+      }
+
+      &:hover {
+        color: rebeccapurple;
+      }
+
+      &:active {
+        color: red;
+      }
+    }
+  }
+}
+
+.Home {
+  align-items: center;
+  margin: auto;
+}
+
+.homeImage {
+  background-image: url('https://images.pexels.com/photos/196643/pexels-photo-196643.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+  height: 600px;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  // span {
+  //   color: #fff;
+  //   font-size: 50px;
+  //   opacity: 1;
+  //   font-family: Bebas;
+  //   margin-bottom: 200px;
+  //   border: 5px solid #fff;
+  //   padding: 20px;
+  //   width: 450px;
+  // }
+}
+
+.Main, h1 {
+  border-bottom: 1px solid #333;
+}
+.menuItems, h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.spanTitle {
+  font-family: Gotham;
+  margin: 10px;
+}
+
+.singleItem {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
 }
