@@ -8,7 +8,7 @@ class Burgers extends Component {
         <span> Burger topped with lettuce, tomato,
       sliced white onions, pickles, melted sharp cheddar,
       yellow mustard and mayo, served on a challah bun. </span>
-        <span> <b> $14 </b>ya </span>
+        <span> <b> $14 </b> </span>
       </div>
 
       <div className='singleItem'>

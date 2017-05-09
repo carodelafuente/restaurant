@@ -53,7 +53,7 @@ body {
 }
 
 .homeImage {
-  background-image: url('https://images.pexels.com/photos/196643/pexels-photo-196643.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+  background: url('http://tinyimg.io/i/OnDfH0R.jpg');
   height: 600px;
   opacity: 0.8;
   background-repeat: no-repeat;
@@ -87,7 +87,9 @@ body {
 
 .menuLinks {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  width: 300px;
+  margin: auto;
 
   a {
     text-decoration: none;
