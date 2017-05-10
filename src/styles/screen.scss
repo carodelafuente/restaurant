@@ -45,7 +45,7 @@ body {
       }
     }
   }
-}
+}xs
 
 .Home {
   align-items: center;
@@ -85,16 +85,50 @@ body {
   text-align: center;
 }
 
-.menuLinks {
+.menuBox {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menuLinks {
+  display: inline-block;
+  justify-content: center;
   width: 300px;
   margin: auto;
+  padding: 0;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    }
+  }
+
+
+  li {
+    list-style: none;
+  }
 
   a {
     text-decoration: none;
     margin: 0px;
+
+    &:visited {
+      color: darkblue;
+    }
+
+    &:hover {
+      color: rebeccapurple;
+    }
+
+    &:active {
+      color: red;
   }
+}
+
+.menuLinksList {
+  padding: 0;
 }
 
 .spanTitle {
@@ -129,6 +163,7 @@ body {
   flex-direction: column;
   width: 600px;
 }
+
 .aboutGrid {
   display: grid;
   justify-content: space-around;

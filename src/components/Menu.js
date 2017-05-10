@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, NavLink, Link, Switch } from 'react-router-dom'
+import { BrowserRouter as Route, NavLink, Switch } from 'react-router-dom'
 import { query } from '../api'
 
 class Menu extends Component {
@@ -23,8 +23,8 @@ class Menu extends Component {
       <div className='menuBox'>
         <h2 className='bodyh1'>Our Menu</h2>
 
-        <section className='menuLinks'>
-          <ul>
+        <div className='menuLinks'>
+          <ul className='menuLinksList'>
             {this.state.categories.map(({ slug, name }, i) => (
               <li key={i}>
                 <NavLink to={`/menu/${slug}`}>{name}</NavLink>
@@ -32,12 +32,10 @@ class Menu extends Component {
           ))}
           </ul>
           <Switch>
-            <Route path='/menu' exact>
-              <h2>This is our delicious menu.</h2>
-            </Route>
+            <Route path='/menu' exact />
             <Route path='/menu/:slug' component={MenuSection} />
           </Switch>
-        </section>
+        </div>
       </div>
     </div>
   }
@@ -76,7 +74,7 @@ class MenuSection extends React.Component {
   }
 
   render () {
-    return <section>
+    return <section className='menuItems'>
       <h3 className='spanTitle'>{this.state.name}</h3>
       <table>
         <tbody>
